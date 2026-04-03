@@ -28,32 +28,25 @@ It combines **real-time web search**, **LLM reasoning**, and **structured report
 ## 🎯 ⚡ Key Features
 
 ✨ **Multi-Agent AI System**
-
-* Research Agent + Analysis Agent working together
+• Research Agent + Analysis Agent working together
 
 🌐 **Real-Time Data Retrieval**
-
-* Powered by Serper API (Google search)
+• Powered by Serper API (Google search)
 
 📊 **AI-Generated Reports**
-
-* Structured, clean, and insightful
+• Structured, clean, and insightful
 
 🧠 **Smart Sentiment Analysis**
-
-* Positive / Negative / Neutral insights
+• Positive / Negative / Neutral insights
 
 📄 **PDF Export**
-
-* Generate downloadable reports instantly
+• Generate downloadable reports instantly
 
 📁 **History Tracking**
-
-* Save and revisit past analyses
+• Save and revisit past analyses
 
 ⚖️ **Company Comparison**
-
-* Side-by-side insights for better decisions
+• Side-by-side insights for better decisions
 
 ---
 
@@ -92,13 +85,35 @@ PDF Export + History Storage
 
 > ⚡ Clean • Modern • Interactive • Dark Theme
 
-*Add your screenshots here 👇*
+### 🔹 Dashboard View
 
-```
-/assets/dashboard.png
-/assets/report.png
-/assets/compare.png
-```
+<p align="center">
+  <img src="dashboard.png" width="90%"/>
+</p>
+
+---
+
+### 🔹 Research Output
+
+<p align="center">
+  <img src="research.png" width="90%"/>
+</p>
+
+---
+
+### 🔹 History Tracking
+
+<p align="center">
+  <img src="history.png" width="90%"/>
+</p>
+
+---
+
+### 🔹 Comparison View
+
+<p align="center">
+  <img src="comp.png" width="90%"/>
+</p>
 
 ---
 
@@ -140,7 +155,7 @@ streamlit run app.py
 Deploy easily on **Streamlit Cloud**
 
 1. Push to GitHub
-2. Connect repo to Streamlit
+2. Connect repo
 3. Add secrets
 4. Deploy 🎉
 
@@ -175,7 +190,7 @@ Let’s build something amazing together 🚀
 
 ## 📜 📄 Made By
 
-Prateek Choudhary
+**Prateek Choudhary**
 
 ---
 
