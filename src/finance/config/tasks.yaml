@@ -1,0 +1,60 @@
+research_task:
+  description: >
+    Conduct thorough research on company {company}. Focus on:
+    1. Current company status and health
+    2. Historical company performance
+    3. Major challenges and opportunities
+    4. Recent news and events
+    5. Future outlook and potential developments
+
+    IMPORTANT:
+    - You MUST call the search tool at least 2 times before answering
+    - If you do not use the tool, the answer is invalid
+    - You MUST use the search tool before answering
+    - Do NOT rely only on internal knowledge
+    - Do NOT fabricate any information
+    - If data is not found, say: "No reliable data available"
+    - Every claim MUST include a source
+    - Prefer recent (last 1–2 years) information
+
+    Make sure to organize your findings in a structured format with clear sections.
+
+  expected_output: >
+    A structured research document with:
+    - Clear sections
+    - Verified facts only
+    - Source links for each section
+    - If no data found → explicitly mention "No reliable data available"
+
+  agent: researcher
+
+
+analysis_task:
+  description: >
+    Analyze the research findings and create a comprehensive report on {company}.
+
+    IMPORTANT:
+    - ONLY use data provided by the researcher
+    - Do NOT introduce new facts
+    - Do NOT fabricate or assume anything
+    - If information is missing, say: "No reliable data available"
+
+    Your report should:
+    1. Begin with an executive summary
+    2. Include all key information from the research
+    3. Provide analysis ONLY based on available data
+    4. Offer a market outlook (not for trading decisions)
+    5. Be well-structured with headings
+
+  expected_output: >
+    A professional report with:
+    - Executive summary
+    - Verified facts only
+    - Source links
+    - No unsupported claims
+    - Missing data clearly marked as "No reliable data available"
+
+  agent: analyst
+  context:
+    - research_task
+  output_file: output/report.md
