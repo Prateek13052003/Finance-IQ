@@ -1,54 +1,188 @@
-# Finance Crew
+# 🚀 FinanceIQ – AI Financial Research Agent
 
-Welcome to the Finance Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+<p align="center">
+  <b>⚡ Transforming Financial Research with AI-Powered Multi-Agent Intelligence ⚡</b><br>
+  <i>Real-time insights • Smart analysis • Beautiful reports</i>
+</p>
 
-## Installation
+---
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+<p align="center">
+  <img src="https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CrewAI-MultiAgent-00C2FF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Groq-LLM-black?style=for-the-badge"/>
+</p>
 
-First, if you haven't already, install uv:
+---
 
-```bash
-pip install uv
+## 🌌 ✨ Overview
+
+**FinanceIQ** is a next-generation AI-powered financial research platform that automates company analysis using **multi-agent intelligence**.
+
+It combines **real-time web search**, **LLM reasoning**, and **structured report generation** to deliver deep insights on any company in seconds.
+
+💡 Think of it as your **AI Financial Analyst + Research Assistant + Report Generator** — all in one.
+
+---
+
+## 🎯 ⚡ Key Features
+
+✨ **Multi-Agent AI System**
+
+* Research Agent + Analysis Agent working together
+
+🌐 **Real-Time Data Retrieval**
+
+* Powered by Serper API (Google search)
+
+📊 **AI-Generated Reports**
+
+* Structured, clean, and insightful
+
+🧠 **Smart Sentiment Analysis**
+
+* Positive / Negative / Neutral insights
+
+📄 **PDF Export**
+
+* Generate downloadable reports instantly
+
+📁 **History Tracking**
+
+* Save and revisit past analyses
+
+⚖️ **Company Comparison**
+
+* Side-by-side insights for better decisions
+
+---
+
+## 🧠 🏗️ Architecture
+
+```
+User Input
+   ↓
+Research Agent (Web Search)
+   ↓
+Analysis Agent (LLM Reasoning)
+   ↓
+Structured Report Generation
+   ↓
+UI Rendering (Streamlit)
+   ↓
+PDF Export + History Storage
 ```
 
-Next, navigate to your project directory and install the dependencies:
+---
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
+## 🛠️ ⚙️ Tech Stack
+
+| Layer       | Technology     |
+| ----------- | -------------- |
+| 🧠 AI Model | Groq (LLaMA 3) |
+| 🤖 Agents   | CrewAI         |
+| 🌐 Data     | Serper API     |
+| 💻 Backend  | Python         |
+| 🎨 Frontend | Streamlit      |
+| 📄 Reports  | FPDF           |
+
+---
+
+## 🎨 🌈 UI Preview
+
+> ⚡ Clean • Modern • Interactive • Dark Theme
+
+*Add your screenshots here 👇*
+
 ```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/finance/config/agents.yaml` to define your agents
-- Modify `src/finance/config/tasks.yaml` to define your tasks
-- Modify `src/finance/crew.py` to add your own logic, tools and specific args
-- Modify `src/finance/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+/assets/dashboard.png
+/assets/report.png
+/assets/compare.png
 ```
 
-This command initializes the finance Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## 🚀 ⚡ Getting Started
 
-## Understanding Your Crew
+### 🔧 1. Clone Repo
 
-The finance Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+```bash
+git clone https://github.com/your-username/financeiq.git
+cd financeiq
+```
 
-## Support
+### 📦 2. Install Dependencies
 
-For support, questions, or feedback regarding the Finance Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+```bash
+pip install -r requirements.txt
+```
 
-Let's create wonders together with the power and simplicity of crewAI.
+### 🔑 3. Add Environment Variables
+
+Create `.env` file:
+
+```
+GROQ_API_KEY=your_key
+SERPER_API_KEY=your_key
+OPENAI_BASE_URL=https://api.groq.com/openai/v1
+```
+
+### ▶️ 4. Run App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🌍 🚀 Deployment
+
+Deploy easily on **Streamlit Cloud**
+
+1. Push to GitHub
+2. Connect repo to Streamlit
+3. Add secrets
+4. Deploy 🎉
+
+---
+
+## 💡 🧩 Use Cases
+
+✔ Stock Research
+✔ Investment Analysis
+✔ Market Trend Study
+✔ Competitive Comparison
+✔ Financial Reporting
+
+---
+
+## 🏆 🌟 Highlights
+
+* 🔥 Multi-Agent AI Architecture
+* ⚡ Real-time Web Intelligence
+* 🎯 Clean & Interactive UI
+* 📊 Data-driven insights
+* 🚀 Production-ready project
+
+---
+
+## 🤝 💬 Contributing
+
+Pull requests are welcome!
+Let’s build something amazing together 🚀
+
+---
+
+## 📜 📄 Made By
+
+Prateek Choudhary
+
+---
+
+<p align="center">
+  <b>✨ Built with passion, intelligence, and a vision for smarter finance ✨</b>
+</p>
+
+<p align="center">
+  ⭐ If you like this project, don’t forget to star it!
+</p>
